@@ -8,7 +8,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Permite solicitudes desde esta URL (cambia si usas otro puerto o dominio)
+    allow_origins=["https://library-fronted.onrender.com"],  # Permite solicitudes desde esta URL (cambia si usas otro puerto o dominio)
     allow_credentials=True,
     allow_methods=["*"],  # Permite todos los métodos HTTP (GET, POST, PUT, DELETE, etc.)
     allow_headers=["*"],  # Permite todos los headers
